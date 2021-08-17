@@ -1,0 +1,27 @@
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+public class firefox1 {
+
+
+	public static void main (String[] args) throws InterruptedException
+	{
+// path gecko.driver
+  	
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\user\\Downloads\\geckodriver-v0.29.1-win64\\geckodriver.exe");
+        WebDriver driver = new FirefoxDriver();
+      //navigate to website 
+		driver.get("https://www.visitsaudi.com/en");
+		 //Maximize the browser 
+		driver.manage().window().maximize();
+	    
+		// execution for a specified period.
+		    Thread.sleep(200000);
+
+	      driver.close();
+	   
+	}}

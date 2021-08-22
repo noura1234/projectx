@@ -1,0 +1,30 @@
+package Lc4;
+
+//import week3.MyExceptionTest;
+
+public class Exceptions {
+public 	void Ex () {
+	
+	throw new ExceptionTest();
+	
+	
+	}
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	
+	try {
+         new Exceptions().Ex();
+      } 
+	catch(Exception e) {
+         System.out.println("example of runtime Exception");
+      }
+}
+
+}
+class ExceptionTest extends RuntimeException {
+	   public ExceptionTest() {
+	      super();
+	   }
+	}
+

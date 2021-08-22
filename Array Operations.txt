@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		double[] arr = {1.9, 2.9, 3.4, 3.5};
+		for(double number : arr) {
+			System.out.println(number);
+			}
+		
+		double sum = Arrays.stream(arr).sum();
+		System.out.println("Total is: " + sum);
+		
+		double max = Arrays.stream(arr).max().orElse(Double.NaN);
+		System.out.println("Max is :" + max);
+
+	}
+
+}

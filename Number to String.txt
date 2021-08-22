@@ -1,0 +1,54 @@
+package groovyTest
+
+//Read from user
+println "Enter the string:"
+str = System.in.newReader().readLine()
+str = str.toLowerCase()
+
+//Evaluating the expression value
+switch(str) {
+
+	//There is case statement defined for 10 cases
+	// Each case statement section has a break condition to exit the loop
+	case "one":
+		int one = 1
+		println(one);
+		break;
+	case "two":
+		int two = 2
+		println(two);
+		break;
+	case "three":
+		int three = 3
+		println(three);
+		break;
+	case "four":
+		int four = 4
+		println(four);
+		break;
+	case "five":
+		int five = 5
+		println(five);
+		break;
+	case "six":
+		int six = 6
+		println(six);
+		break;
+	case "saven":
+		int saven = 7
+		println(saven);
+		break;
+	case "eight":
+		int eight = 8
+		println(eight);
+		break;
+	case "nine":
+		int nine = 9
+		println(nine);
+		break;
+
+	default:
+		println("The value is unknown");
+		break;
+}
+

@@ -1,0 +1,38 @@
+package binarySearch;
+
+import java.util.Scanner;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter number of elements:");
+		int len = scanner.nextInt();
+		int arr[] = new int[len];
+		
+		System.out.println("Enter " + len + " integers:");
+		for (int i = 0; i < len; i++) 
+		{
+			arr[i] = scanner.nextInt();
+        }
+		
+		System.out.println("Enter value to find:");
+		int val = scanner.nextInt();
+		
+		for (int i = 0; i < len; i++)
+		{
+			if (arr[i] == val)
+			{
+				System.out.println(val + " found at location " + i++);
+			}
+		}
+
+	}
+
+}
+
+
+ 
+
+ 

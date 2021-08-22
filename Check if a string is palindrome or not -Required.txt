@@ -1,0 +1,13 @@
+package groovyTest
+
+println "Enter a string"
+string = System.in.newReader().readLine()
+
+length = string.length()
+reverseString = string.reverse()
+
+if (string.equalsIgnoreCase(reverseString)) {
+	println "The given string is Palindrome"
+} else {
+	println"The given string is NOT a Palindrome"
+}

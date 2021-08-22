@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		LinkedList<String> books = new LinkedList<String> ();
+		books.add("Home Alone");
+		System.out.println("Linked list before adding:" + books);
+		
+		books.addFirst("Harry Porter");
+		books.addLast("Lord of the Rings");
+		System.out.println("Linked list after adding:" + books);
+		
+		System.out.println("The first movie is: " + books.getFirst());
+		System.out.println("The last movie is: " + books.getLast());

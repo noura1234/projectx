@@ -1,0 +1,22 @@
+package forEach;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		int[][] num = {
+                { 1, 2, 3, 4, 5 },
+                { 2, 4, 6, 8, 10 },
+            };
+		
+		int sum = 0;
+		
+		for( int[] i: num ) {
+			for( int j: i ) {
+				//System.out.println("The value is: " + i);
+				System.out.println("The value is: " + j);
+				sum = sum + j;
+			}
+		}
+		System.out.println("The sum is: " + sum);
+
+	}

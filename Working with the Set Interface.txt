@@ -1,0 +1,26 @@
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetDemo {
+
+    public static void main(String[] args) {
+
+        Set<Integer> hashSet= new HashSet<>();
+
+         hashSet.add (34);
+         hashSet.add (22);
+         hashSet.add (10);
+         hashSet.add (60);
+         hashSet.add (30);
+         System.out.println("Unsorted : " + hashSet);
+
+         Set<Integer> treeSet = new TreeSet<Integer>(hashSet);
+
+         System.out.println("Sorted : " + treeSet);
+         System.out.println("First element of HashSet : "
+                            + ((TreeSet<Integer>) treeSet).first());
+         System.out.println("Last element of HashSet : "
+                 + ((TreeSet<Integer>) treeSet).last());
+     }
+   }
